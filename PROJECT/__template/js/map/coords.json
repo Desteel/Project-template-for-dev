@@ -1,0 +1,65 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "id": 0,
+            "complex" : "orbita",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [53.254154, 50.226746]
+            },
+            "properties": {
+                "balloonContent": "Нота",
+                "iconContent": "Нота",
+                "hintContent": "Адрес",
+                "cath" : "shops"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 1,
+            "complex" : "orbita",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [53.254482, 50.227282]
+            },
+            "properties": {
+                "balloonContent": "Магнит",
+                "iconContent": "Магнит",
+                "hintContent": "Адрес",
+                "cath" : "shops"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 2,
+            "complex" : "harmony",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [53.250557, 50.232475]
+            },
+            "properties": {
+                "balloonContent": "Школа № 152",
+                "iconContent": "Школа № 152",
+                "hintContent": "Адрес",
+                "cath" : "schools"
+            }
+        },
+        {
+            "type": "Feature",
+            "id": 3,
+            "complex" : "orbita",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [53.253748, 50.223130]
+            },
+            "properties": {
+                "balloonContent": "Детский сад № 230",
+                "iconContent": "Детский сад № 230",
+                "hintContent": "Адрес",
+                "cath" : "kindergartens"
+            }
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+/* clear */
+.clearfix:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.clear_b:before  {
+  content: " ";
+  display: table;
+  clear: both;
+}
+/*    */

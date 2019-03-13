@@ -1,0 +1,117 @@
+.hamburger {
+    position: relative;
+    z-index: 20;
+    width: 25px;
+    height: 25px;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+
+    &__line {
+        width: 100%;
+        height: 3px;
+        position: absolute;
+        transition: transform 0.2s;
+        background-color: #fff;
+
+        &:first-child {
+            transform: translate3d(0, -8px, 0);
+        }
+        &:nth-child(2) {
+            transform: translateZ(0);
+        }
+        &:nth-child(3) {
+            transform: translate3d(0, 8px, 0);
+        }
+    }
+
+    &--active {
+        display: flex;
+
+        .hamburger__line:first-child {
+            transform: translateZ(0) rotate(45deg);
+        }
+        .hamburger__line:nth-child(2) {
+            transform: translateZ(0) scaleX(0.1);
+        }
+        .hamburger__line:nth-child(3) {
+            transform: translateZ(0) rotate(-45deg);
+        }
+    }
+}
+
+.button {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+
+    &:before {
+        content: attr(data-hover);
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+        transition: transform 0.3s;
+        transform: translateX(-25%);
+        padding: 0.85em 0.9em;
+        font-weight: 700;
+        text-align: center;
+    }
+	
+	button.button {
+		padding: 0;
+	}
+
+    &:hover {
+        &:before {
+            transform: translateX(0);
+        }
+        .button__text {
+            transform: translateX(100%);
+        }
+    }
+
+    &__text {
+        display: block;
+        transition: transform 0.3s;
+        padding: 0.85em 0.9em;
+        font-weight: 700;
+        text-align: center;
+    }
+}
+
+//styles
+.button--one {
+    &:before {
+        background-color: #fff;
+        color: initial;
+    }
+    .button__text {
+        color: initial;
+    }
+}
+
+.button--two {
+    &:before {
+        background-color: black;
+        color: #fff;
+    }
+    .button__text {
+        color: initial;
+    }
+}
+
+.button--three {
+    &:before {
+        background-color: black;
+        background-color: rgb(245, 213, 13);
+    }
+    .button__text {
+        background-color: rgb(166, 0, 0);
+        color: #fff;
+    }
+}

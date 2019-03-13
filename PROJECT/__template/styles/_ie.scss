@@ -1,0 +1,23 @@
+/* стили для IE10 - IE11 */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    
+    
+//END
+}
+
+
+
+/* Safari 11+ */
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+    
+//END
+}}
+
+/* стили только для IE9 - IE10 */
+@media screen and (min-width:0\0) {
+
+}
+/*
+    END
+*/

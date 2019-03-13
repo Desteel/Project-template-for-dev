@@ -1,0 +1,94 @@
+/* BLOCKS */
+
+/* table */
+.--table {
+	display: table;
+
+	&__row {
+		display: table-row;
+	}
+	&__cell {
+		display: table-cell;
+		padding-right: 3%;
+	}
+}
+
+/* text transform */
+.--uppercase {
+	text-transform: uppercase;
+}
+
+.--position {
+	top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/* input */
+.--input-reset {
+	border: none;
+    outline: none;
+    outline-offset: 0;
+}
+
+/* inline */
+.--inline-reset {
+	line-height: 0;
+	font-size: 0;
+}
+
+.--inline-reset__inner {
+	vertical-align: top;
+	display: inline-block;
+	line-height: initial;
+  	font-size: initial;
+}
+
+.--inline {
+	display: inline-block;
+}
+
+.--block {
+	display: block;
+}
+
+/* reset */
+.--reset {
+	margin: 0;
+    padding: 0;
+}
+
+/* hidden */
+.--deactive {
+    display: none;
+}
+
+.--active {
+    display: inline-block;
+}
+
+.--hidden {
+	transition: opacity 0.3s ease, visibility 0.3s ease;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.--visible {
+	transition: opacity 0.3s ease, visibility 0.3s ease;
+	opacity: 1;
+	visibility: visible;
+}
+
+
+/* text */
+.--align-center {
+	text-align: center;
+}
+
+
+/* list */
+.--list-reset {
+    list-style: none;
+}

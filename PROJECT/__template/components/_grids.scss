@@ -1,0 +1,27 @@
+$four: 30px;
+$five: 10px;
+
+.grid {
+    display: flex;
+    flex-flow: wrap;
+
+    &--four {
+        margin-right: -$four;
+    }
+    &--five {
+        margin-right: -$five;
+    }
+}
+
+.grid__item {
+    &--four {
+        width: calc(100% / 4 - 30px);
+        margin-right: $four;
+        margin-bottom: $four;
+    }
+    &--five {
+        width: calc(100% / 5 - 10px);
+        margin-right: $five;
+        margin-bottom: $five;
+    }
+}

@@ -1,0 +1,129 @@
+.h-underline {
+    position: relative;
+
+    &:before {
+        @include pseudo;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: currentColor;
+        transition: transform 0.3s ease;
+        transform: none;
+        z-index: 1;
+    }
+
+    &:hover:before {
+        transform: scaleX(0);
+    }
+
+    &--1 {
+        &:before {
+            height: 1px;
+        }
+    }
+    &--2 {
+        &:before {
+            height: 2px;
+        }
+    }
+}
+
+.h-underline-wrap {
+    &:hover {
+        .h-underline {
+            &:before {
+                transform: scaleX(0);
+            }
+        }
+    }
+}
+//END
+
+.h-line {
+    position: relative;
+
+    &:before {
+        @include pseudo;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: currentColor;
+        transition: transform 0.3s ease;
+        transform: scaleX(0);
+        z-index: 1;
+    }
+
+    &:hover:before {
+        transform: none;
+    }
+
+    &--1 {
+        &:before {
+            height: 1px;
+        }
+    }
+    &--2 {
+        &:before {
+            height: 2px;
+        }
+    }
+}
+
+.h-line-wrap {
+    &:hover {
+        .h-line {
+            &:before {
+                transform: none;
+            }
+        }
+    }
+}
+//END
+
+.h-slideline {
+   position: relative;
+   display: inline-block;
+   cursor: pointer;
+   
+   &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 0;
+      background-color: currentcolor;
+      transition: width 0.3s;
+      right: 0;
+   }
+   
+   &:hover {
+      &:before {
+         width: 100%;
+         left: 0;
+         right: auto;
+      }
+   }
+   
+   &--1 {
+        &:before {
+            height: 1px;
+        }
+    }
+    &--2 {
+        &:before {
+            height: 2px;
+        }
+    }
+}
+
+.h-slideline-wrap {
+    &:hover {
+        .h-slideline {
+            &:before {
+				width: 100%;
+				left: 0;
+				right: auto;
+            }
+        }
+    }
+}
+//END

@@ -1,0 +1,28 @@
+@import '~compass-mixins/lib/compass';
+@import '~breakpoint-sass/stylesheets/breakpoint';
+@import '_mixins.scss';
+
+@import '_normalize.scss';
+@import '_clearfix.scss';
+
+@import '../../css/components/_hovers.scss';
+@import '../../css/components/_attr.scss';
+
+@import '_fonts.scss';
+
+@import '_base.scss';
+
+@import '../../css/plugins/_slick.scss';
+@import '../../css/plugins/_select2.scss';
+
+@import '_inputs.scss';
+
+@import '_styles.scss';
+
+@import '_media.scss';
+
+@import '_ie.scss';
+
+//img(src=require("../../images/"))
+//img(src='../../images/' alt='')
+//background-image: url("../images/");

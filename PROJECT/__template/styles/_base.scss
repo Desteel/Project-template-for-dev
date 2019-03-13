@@ -1,0 +1,31 @@
+.body {
+	background-color: #fff;
+	font-family: 'Roboto', sans-serif;
+}
+
+.page {  
+    position: relative;
+
+    min-height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.wrap-main {
+	flex: 1 0 auto;
+}
+
+.footer {
+	flex-shrink: 1;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+}
